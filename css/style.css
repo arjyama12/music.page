@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top: 19px;
+    left: 20px;
+}
+.logo img{
+    width: 120px;
+    box-shadow: 6px 6px 6px wheat;
+}
+@media screen and (max-width:600px){
+    .logo img{
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 67px;
+        width: 128px;
+        height: 128px;
+    }
+}
+.navbar{
+    display: flex;
+    left: 60%;
+    float: right;
+    margin: 5px;
+    padding: 11px;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(194, 189, 189);
+    font-size: 29px;
+    cursor: pointer;
+    font-family: 'RocknRoll One' sans-serif;
+}
+.navbar a:hover{
+    animation-name: test;
+    animation-duration: 1s;
+}
+@media screen and (max-width:600px){
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@keyframes test{
+    from{
+        color: white;
+        font-size: 29px;}
+        to{color: orangered;
+        font-size: 36px;
+    text-shadow: 3px 4px 3px yellow;}
+}
+.pic{
+    position: absolute;
+    top: 52%;
+    left: 16%;
+}
+.pic img{
+    width: 85px;
+    box-shadow: 3px 3px 3px wheat;
+}
+@media screen and (max-width:600px){
+    .pic img{
+        position: absolute;
+        top: 235px;
+        width: 70px;
+        height: 70px;
+    }
+}
+.text{
+    position: absolute;
+    top: 39%;
+    left: 16%;
+}
+h1{
+    font-size: 82px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 9px 9px 6px rgb(99, 104, 92);
+}
+@media screen and (max-width:600px){
+    h1{
+        font-size: 60px;
+        margin-top: 150px;
+    }
+}
+p{
+    color: ivory;
+    margin-top: 7px;
+    margin-left: 100px;
+    font-size: 45px;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 5px rgb(180, 175, 175);
+}
+@media screen and (max-width:600px){
+    p{
+        font-size: 35px;
+        justify-content: center;
+    }
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/1327438/pexels-photo-1327438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: anime;
+    animation-direction: alternate-reverse;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes anime{
+    0%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/3104/black-and-white-music-headphones-life.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    }
+    20%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    }
+    40%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    }
+    60%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/3608804/pexels-photo-3608804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    }
+    80%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/2470088/pexels-photo-2470088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    }
+    100%{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/1327438/pexels-photo-1327438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    }
+}
